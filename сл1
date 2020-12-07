@@ -1,0 +1,5 @@
+string = input()
+dictionary = {}
+for i in range(len(string)):
+    dictionary[string[i]] = i
+print(dictionary)

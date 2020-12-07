@@ -1,0 +1,6 @@
+char_list = list(input())
+count = 0
+for i in char_list:
+    if i in dictionary.keys():
+        count+=1
+print(count)
