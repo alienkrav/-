@@ -1,0 +1,17 @@
+def multiply_three_args(*args):
+    rezult=1
+    if (len(args)>1) and (len(args)<=3):
+        for num in args:
+            rezult*=num
+        return rezult
+    else:
+        return;
+a1=(15, 10, 5)
+a2=(3, 1)
+a3=[2, 35, 55]
+a4=(5, 10, 15, 20)
+print(multiply_three_args(a1))
+print(multiply_three_args(a2))
+print(multiply_three_args(a3))
+print(multiply_three_args(a4[0],a4[1],a4[2]))
+print(multiply_three_args(a4[1],a4[2],a4[3]))
