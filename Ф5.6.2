@@ -1,0 +1,23 @@
+def calc_op(s,oper_d):
+  word_list = s.split()
+  num_list = []
+  for word in word_list:
+    if word.isnumeric():
+      num_list.append(int(word))
+  pos = 0
+  c = s[pos]
+  while ((c != '+') and (c !='-') and (c !='*') and (c!='^') and (c!='%') and (c!='/')): 
+    c = s[pos]
+    pos+=1
+  rezult = oper_d[c]
+  return rezult(num_list[0], num_list[1])
+s = '52 * 8'
+dict = {
+    '+' : lambda x,y : x + y,
+    '-' : lambda x,y : x - y,
+    '*' : lambda x,y : x * y,
+    '%' : lambda x,y : x % y,
+    '**' : lambda x,y : x**y
+}
+print(calc_op(s,dict))
+
