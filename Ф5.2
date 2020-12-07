@@ -1,0 +1,13 @@
+def multiply_three_args(*args):
+    rezult=1
+    if (len(args)>1) and (len(args)<=3):
+        for num in args:
+            rezult*=num
+        return rezult
+    else:
+        return;
+print(multiply_three_args())
+print(multiply_three_args(3))
+print(multiply_three_args(4,5))
+print(multiply_three_args(5,6,7))
+print(multiply_three_args(4,5,6,7))
