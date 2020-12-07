@@ -1,0 +1,7 @@
+a= "fgpokgfsf"
+b= "osoposjdff"
+c=""
+for i in a:
+    if i in b and i not in c:
+        c+=i
+print(c)

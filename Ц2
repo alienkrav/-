@@ -1,0 +1,6 @@
+n=int(input("Введите значение: "))
+resuit=1
+while n>=1:
+    resuit *= n
+    n-=2
+print(resuit)

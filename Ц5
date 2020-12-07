@@ -1,0 +1,12 @@
+while True:
+    a=input("Введите текст ")
+    b='STOP'
+    if a==b:
+        print("Program interrupted by user")
+        break
+    elif a<b[0]:
+        print("Too early in the dictionary. Try again!")
+    else:
+        print(f' {a:_^30}')
+    
+    

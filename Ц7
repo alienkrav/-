@@ -1,0 +1,8 @@
+a='Hello world!'
+b='HERD'
+for i,e in a[1]:
+    if e.lower() in b.lower:
+        c=b.lover.index(e.lover())
+        print(f'{1} символ встречается в строке поиска: {b.lower[:c]+b.lower[c]+b.lower[c+1:]})
+        
+        
