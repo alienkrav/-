@@ -1,0 +1,2 @@
+dl = [ {'a': 5, 'b': 10, 'z': 10}, {'a': 10, 'b': 20, 'c': 1}, {'a': 3, 'y': 7}]
+sorted(dl, key=lambda dict: dict['a'])

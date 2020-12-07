@@ -1,0 +1,23 @@
+def Car(**kwargs):
+  dict = {
+      'mark' : 'lada',
+      'model' : '112',
+      'color' : 'gray',
+      'year' : '1999',
+      'probeg' : '1000',
+      'number' : 'k233lk',
+      'price' : '100000'
+  }
+  for name, value in kwargs.items():
+    dict[name] = value
+  newname = dict['mark']
+  newmodel = dict['model']
+  newcolor = dict['color']
+  newyear = dict['year']
+  newprobeg = dict['probeg']
+  newnumber = dict['number']
+  newprice = dict['price']
+  row = f'Автомобиль марки: {newname}, модели: {newmodel}, цвета: {newcolor}, {newyear} года выпуска, с пробегом: {newprobeg} км, c номерным знаком: {newnumber}, цена: {newprice} руб.'
+  return row;
+print(Car(mark='lada', color='red', year='1999', probeg='1000000'))
+print(Car(mark='bmw', color='black', probeg='10000000', price='1000000'))
