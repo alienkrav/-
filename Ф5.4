@@ -1,0 +1,18 @@
+def multiply_max_num(*args):
+    rezult=1
+    if len(args) > 1:
+      for num in args:
+        rezult*=num
+      return rezult
+    else:
+        return;
+a1=(15, 10, 5)
+a2=(3, 1)
+a3=[2, 35, 55]
+a4=(5, 10, 15, 20)
+print(multiply_max_num(a1))
+print(multiply_max_num(a2))
+print(multiply_max_num(a3))
+print(multiply_max_num(a4[0],a4[1],a4[2]))
+print(multiply_max_num(a4[1],a4[2],a4[3]))
+print(multiply_max_num(1,2,3,4,5,6,7,8,8))

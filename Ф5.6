@@ -1,0 +1,25 @@
+def calc(s):
+  pos = 0
+  c = s[pos]
+  while ((c != '+') and (c !='-') and (c !='*') and (c!='^') and (c!='%') and (c!='/')):
+    c = s[pos]
+    pos+=1
+  word_list = s.split()
+  num_list = []
+  for word in word_list:
+    if word.isnumeric():
+      num_list.append(int(word))
+
+  if (c == '+'):
+    return num_list[0] + num_list[1]
+  if (c == '*'):
+    return num_list[0] * num_list[1]
+  if (c == '-'):
+    return num_list[0] - num_list[1]
+  if (c == '/'):
+    return num_list[0] / num_list[1]
+  if (c == '%'):
+    return num_list[0] % num_list[1]
+  if (c == '^'):
+    return num_list[0] ** num_list[1]
+print(calc('35 ^ 20'))
