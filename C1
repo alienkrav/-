@@ -1,0 +1,6 @@
+a=[31, 24, 17]
+print(a)
+list.copy(a)
+print(a)
+c=list(range(17, 32, 7))
+print(c)
