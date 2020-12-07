@@ -1,0 +1,5 @@
+from random import*
+ri1 = [random.randint(1, 15) for _ in range(30)]
+print(ri1)
+ri1 = sorted(list(set(ri1)))
+print(ri1)

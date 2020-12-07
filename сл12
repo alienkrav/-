@@ -1,0 +1,16 @@
+flat_list = []
+for sublist in list2d:
+    for item in sublist:
+        flat_list.append(item)
+flat_list
+list2d = [[random.randint(1,15) for _ in range(random.randint(1,4))] 
+            for i in range(random.randint(1,6))]
+print(list2d)
+flat_list = []
+for sublist in list2d:
+    if(len(sublist) == 1):
+        flat_list.append(sublist[0])
+    else:
+        for i in range(0,len(sublist),len(sublist)-1):
+            flat_list.append(sublist[i])
+print(flat_list)

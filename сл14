@@ -1,0 +1,18 @@
+user_input_list = input("Вводи элементы:\n").split(",")
+bag = []
+while("" not in user_input_list):
+    for i in user_input_list:
+        if int(i) in bag:
+            print("Полученное значение {0} уже есть в мешке!".format(i))
+        elif len(bag) == 5:
+            pop_el = bag.pop(len(bag)-1)
+            bag.append(int(i))
+            print("Превышен размер мешка, элемент {0} был заменен на новое значение {1}".format(pop_el,i))
+            print("Мешок:",bag)
+        else:bag.append(int(i))
+    user_input_list = input().split(",")
+else:
+    print(bag)
+
+
+

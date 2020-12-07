@@ -1,0 +1,8 @@
+dic5 = {'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9}
+dic6 = {'e': 20, 'f': 21, 'g': 22, 'h': 23, 'i': 24, 'j': 25, 'k': 26, 'l': 27}
+dic7 = {}
+print("Старые словари dic5 u dic6:","\n",dic5, "\n", dic6)
+for k in dic6.keys():
+    if k not in dic5.keys():
+        dic7[k] = dic6[k]
+print("Новый словарь на основе dic6 = ",dic7)
