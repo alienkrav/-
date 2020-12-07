@@ -1,0 +1,15 @@
+a=input()
+print(str.split(a))
+a=input()
+print(str.split(a))
+a=input()
+b=[]
+c=''
+for char in a:
+    if char.isdigit():
+        c=c+char
+    else:
+        if c!='':
+               b.append(int(c))
+               c=''
+print(b)
