@@ -1,0 +1,10 @@
+int_list = list(map(int, input().split(",")))
+count = 0
+for i in range(len(int_list)-1,-1,-1):
+    if(count < 2 ):
+        if(int_list[i] == 1):
+            count+=1
+            ind = i
+    else:
+        print(ind)
+        break

@@ -1,0 +1,11 @@
+matrix = [[j for j in range(randint(1,30))] for i in range(randint(2,5))] 
+print(matrix)   
+new_matrix = []
+for i in range(len(matrix)):
+    item = []
+    for j in range(len(matrix[i])):
+        item.append(matrix[i][j])
+    new_matrix.append(item)
+print(new_matrix, (matrix == new_matrix))
+new_matrix[0][0] = -345
+print(matrix == new_matrix)
